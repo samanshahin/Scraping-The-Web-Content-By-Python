@@ -171,4 +171,22 @@ So you'll have a div that each 5 seconds, being refreshed and shows the last gen
 
 Have any question or project to do, Contact me via email (saman_shahin@yahoo.com).
 
+# A New Agency project
+
+Continued from previous post called "Scraping The Web Content By Python"...
+
+In this project, we're going to scrap economy-related news headlines from [a news website](https://www.mehrnews.com/service/Economy).
+
+This project is a little tricky! Because we're looking for tags with a specific class name (not id as discussed in previous post):
+
+We used this function as our scraping method (for more details and comments on the code, please refer to precious post.) :
+
+    def get_news_from_eq():
+    URL = 'https://www.mehrnews.com/service/Economy'
+    headers={"user-agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0'}
+    page = requests.get(URL, headers=headers)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    m_news = soup.findAll("li", { "class" : "news" })
+    return m_news
+    
 Have Fun!
