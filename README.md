@@ -7,7 +7,7 @@ So let's start one project at this time.
 
 This project, I call it "Brokerage-ir", is working on Tehran Stock Exchange website and gets its data like general index, and so on.
 
-We use web scraping techniques to build our web application on Flask framework.
+We use web scraping techniques to build our web application on [Flask](https://flask.palletsprojects.com/) framework.
 
 Collecting Data as one of the earliest steps in Data Science process:
 
@@ -171,7 +171,7 @@ So you'll have a div that each 5 seconds, being refreshed and shows the last gen
 
 Have any question or project to do, Contact me via email (saman_shahin@yahoo.com).
 
-# A New Agency project
+# A Newس Agency project
 
 Continued from previous post called "Scraping The Web Content By Python"...
 
